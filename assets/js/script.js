@@ -113,7 +113,7 @@ var generatePassword = function(){
   }
   
   
-  
+  // takes the selected character set and creates random password of length chosen by user
   for(i = 0; i < numCharacters; i++){
     var pwPicks = charChoices[Math.floor(Math.random() * charChoices.length)];
     password = password + pwPicks
@@ -122,49 +122,4 @@ var generatePassword = function(){
   return password;
   
 }
-  /*
-  for(i= 0; i < numCharacters; i++) {
-    if(numConfirmation && upperConfirmation && lowerConfirmation && specialTypeConfirmation){
-    ranNum = Math.floor(Math.random() * (126 - 33 + 1) + 33);
-    }
 
-    password = password + String.fromCharCode(ranNum); 
-  }
-  return password;
-/*
-
-}
-
-character = ["!", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-", ".", "/", "\:", "\;", " < ", "=", " > ", " ? ", "@", "[", "\\", "]", " ^ ", "_", "`", "{", "|", "}", "~"];
-
-/* 
-1. Button is pressed and generatePassword() is ran
-2. once inside function, user is prompted for number of characters when button is pressed.
-3. The desired number of characters is stored inside of a variable
-4. Next, the user is asked to confirm whether they wish to include Uppercase, Lowercase, Numbers, Special Characters, or all of the above in their password. 
-5. Possible character lists are dictated as variables
-6. Next come if and else if statements to dictate every possible outcome of character requests by the user.
-7. Each if statement will concantenate the possible character arrays into one array assigned to a global variable
-8. 
-
-
-
-// .join & .push & .concat
-// password = array
-
-
-/* GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
-WHEN prompted for character types to include in the password
-THEN I choose lowercase, uppercase, numeric, and/or special characters
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page */
