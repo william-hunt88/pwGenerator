@@ -1,6 +1,7 @@
 # passwordGenerator
 
 Built with HTML/CSS & Javascript
+https://william-hunt88.github.io/pwGenerator/
 
 
 
